@@ -1,4 +1,4 @@
-﻿;FFXIV AntiAFK/AntiQUEUE written by tayzo v1.0.0
+﻿;FFXIV AntiAFK/AntiQUEUE written by tayzo v1.0.1
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -12,7 +12,7 @@ Gui, Show,w80 h85, FFXIV AA
 Gui, Add, Button, x12 y10 w50 h20 gHelp_Button, Help
 Gui, Add, Button, x12 y35 w50 h20 gToggle_Button, Toggle
 Gui, Add, Text, x5 y60 r1 w70 +cDA4F49 vIs_Running, Not Running
-Gui +AlwaysOnTop -Resize -MaximizeBox -MinimizeBox
+Gui +AlwaysOnTop -Resize -MaximizeBox +MinimizeBox
 
 ;look for and send input only to game
 winclass = FFXIVGAME
